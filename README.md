@@ -1,96 +1,152 @@
-# 🤖 Nexus Desktop Assistant
 
-AI-powered desktop controller with voice commands, file CRUD,
-volume/brightness control, web automation — in a full Electron window.
+## 📸 Project Screenshots
 
----
+### 1. Home Page
+![AURA Home Page](screenshot/homepage.png)
 
-## 📁 Project Structure
+### 2. File Creation
+![File Creation](screenshot/filecreation.png)
 
-```
+### 3. Brightness Control
+![Brightness Control](screenshot/brightness.png)
+
+### 4. Volume Control
+![Volume Control](screenshot/volume.png)
+
+### 5. Screenshot Feature
+![Screenshot Feature](screenshot/Screenshot%202026-10-25%20120645.png)
+
+### 6. Weather Output
+![Weather Output](screenshot/weather%20op.png)
+
+### 7. Weather Input
+![Weather Input](screenshot/weather%20ip.png)
+
+### 8. Search Input
+![Search Input](screenshot/search%20ip.png)
+
+### 9. Search Output
+![Search Output](screenshot/search%20op.png)
+
+### 10. YouTube Input
+![YouTube Input](screenshot/youtube%20ip.png)
+
+### 11. YouTube Output
+![YouTube Output](screenshot/youtube%20op.png)
+
+
+
+# 🌟 AURA — Autonomous User Responsive Assistant
+
+AURA is an offline desktop assistant designed to simplify everyday computer tasks through text and voice commands. It combines an Electron-based desktop interface with a Python Flask backend to provide desktop automation and system control features.
+
+## ✨ Features
+
+- 🎙️ **Voice & Text Commands** — Interact with the assistant using supported voice and text commands.
+- 🖥️ **Desktop Application** — User-friendly desktop interface built with Electron.
+- 🚀 **Application Control** — Launch supported applications using commands.
+- 📁 **File Operations** — Perform supported file-related tasks.
+- ⚙️ **System Controls** — Access supported system settings and controls.
+- 📊 **System Monitoring** — Monitor system information using Python utilities.
+- 🌐 **Web Access** — Open web pages through supported commands.
+- 🔌 **Local Backend** — Flask REST API running locally.
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- Electron
+- HTML
+- CSS
+- JavaScript
+
+**Backend**
+- Python
+- Flask
+- Flask-CORS
+
+**System Integration**
+- psutil
+- pycaw
+- Pillow
+
+## 📂 Project Structure
+
+```text
 desktop-assistant/
-├── main.js                  ← Electron entry (opens window, starts Python)
-├── preload.js               ← Electron IPC bridge
-├── index.html               ← Full chat UI (ChatGPT-style)
-├── package.json             ← npm / Electron config
-├── setup_and_run.bat        ← ONE-CLICK setup for Windows
-├── setup_and_run.sh         ← ONE-CLICK setup for Mac/Linux
-└── backend/
-    ├── app.py               ← Flask backend (all commands)
-    └── requirements.txt     ← Python packages
+├── backend/
+│   ├── app.py
+│   └── requirements.txt
+├── index.html
+├── loading.html
+├── main.js
+├── preload.js
+├── package.json
+├── package-lock.json
+├── setup_and_run.bat
+├── setup_and_run.sh
+└── README.md
 ```
 
----
+## ⚙️ Installation and Setup
 
-## ⚙️ How to Run  (3 simple steps)
+### Prerequisites
 
-### ✅ Requirements
-- Python 3.8+   →  https://python.org/downloads
-- Node.js 18+   →  https://nodejs.org
+- Python installed
+- Node.js and npm installed
+- Git installed (optional)
 
----
+### Windows
 
-### Windows (easiest)
-```
-Double-click setup_and_run.bat
-```
+1. Clone the repository:
 
-### Mac / Linux
-```bash
-chmod +x setup_and_run.sh
-./setup_and_run.sh
-```
+   ```bash
+   git clone https://github.com/10-harini/AURA.git
+   ```
 
-### Manual steps (any OS)
-```bash
-# 1. Install Python deps
-pip install flask flask-cors pycaw comtypes psutil
+2. Open the project folder:
 
-# 2. Install Electron
-npm install
+   ```bash
+   cd AURA
+   ```
 
-# 3. Launch
-npm start
-```
+3. Run the Windows setup script:
 
----
+   ```text
+   setup_and_run.bat
+   ```
 
-## 💬 Commands Reference
+Follow the instructions displayed by the setup script.
 
-### System
-| Command                  | Action                    |
-|--------------------------|---------------------------|
-| open chrome / notepad    | Opens the app             |
-| volume 70                | Sets volume to 70%        |
-| volume up / volume down  | Increase / decrease       |
-| mute / unmute            | Toggle mute               |
-| brightness 80            | Sets brightness to 80%    |
-| screenshot               | Opens snipping tool       |
-| shutdown / restart       | System commands           |
+### Manual Setup
 
-### Web
-| Command                        | Action               |
-|--------------------------------|----------------------|
-| search python tutorial         | Google search        |
-| youtube lo-fi music            | YouTube search       |
-| weather in Chennai             | Live weather         |
-| navigate to Chennai airport    | Google Maps          |
-| open gmail / open whatsapp     | Open web apps        |
-| news                           | Google News          |
+1. Install the Node.js dependencies:
 
-### Files (use the 📁 File Manager tab)
-- 📂 Open any folder
-- ➕ Create new file
-- ✏️ Edit file in built-in editor
-- 💾 Save changes
-- 🗑 Delete files
+   ```bash
+   npm install
+   ```
 
----
+2. Install the Python dependencies:
 
-## 🎙 Voice Commands
-Click the 🎙 mic button and speak — works for ANY command above.
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
 
----
+3. Start the application using the project's configured startup process.
 
-## ❌ No API Keys Needed
-Everything runs locally. Python + Electron only.
+## 🔒 Privacy
+
+AURA is designed to run locally on your computer. Its actual privacy and offline capabilities depend on the implemented features and any external services or network access used.
+
+## 🎯 Project Goal
+
+The goal of AURA is to make everyday desktop interactions easier through a responsive assistant that connects natural-language commands with useful computer operations.
+
+## 👩‍💻 Developer
+
+**Harini S.**
+
+- GitHub: [10-harini](https://github.com/10-harini)
+
+## 📜 License
+
+Add a license if you intend to distribute this project publicly. Until then, no specific open-source license is declared.
