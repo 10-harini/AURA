@@ -1,0 +1,14 @@
+{
+  "name": "desktop-assistant",
+  "version": "1.0.0",
+  "description": "AI Desktop Assistant - Control your PC with voice & text",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "install-python": "pip install flask pycaw comtypes psutil"
+  },
+  "dependencies": {
+    "electron": "^28.0.0"
+  },
+  "devDependencies": {}
+}

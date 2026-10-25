@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{
+    height:100%;background:#0d0d14;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Segoe UI',sans-serif;color:#e8eaf0;
+    -webkit-app-region:drag;
+    user-select:none;
+  }
+  .wrap{text-align:center;}
+  .logo{font-size:52px;margin-bottom:20px;animation:float 2s ease-in-out infinite;}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  h1{font-size:22px;font-weight:700;letter-spacing:-0.5px;margin-bottom:8px;}
+  p{font-size:13px;color:#5a6078;margin-bottom:32px;}
+  .bar-outer{
+    width:260px;height:4px;background:#1f1f2e;border-radius:99px;
+    overflow:hidden;margin:0 auto;
+  }
+  .bar-inner{
+    height:100%;width:30%;background:linear-gradient(90deg,#4f8ef7,#34d399);
+    border-radius:99px;animation:slide 1.2s ease-in-out infinite;
+  }
+  @keyframes slide{
+    0%{transform:translateX(-100%)}
+    100%{transform:translateX(400%)}
+  }
+  .sub{margin-top:16px;font-size:11px;color:#3a3a50;font-family:monospace;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">🤖</div>
+  <h1>AURA Desktop Assistant</h1>
+  <p>Starting backend, please wait…</p>
+  <div class="bar-outer"><div class="bar-inner"></div></div>
+  <div class="sub">Launching Flask · http://127.0.0.1:5050</div>
+</div>
+</body>
+</html>

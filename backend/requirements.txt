@@ -1,0 +1,5 @@
+flask
+flask-cors
+pycaw
+comtypes
+psutil
